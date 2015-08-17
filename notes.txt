@@ -7,7 +7,12 @@
   *Creativity
 *Contact
 
-
+#Project Wish List
+  1. Sass
+  2. Jekyll?
+  3. Autoprefixer
+  4. Browser Sync
+  5. Grunt
 
 Fonts used:
 Playfair Display, Abril Fatface
