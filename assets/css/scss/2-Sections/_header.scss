@@ -1,0 +1,49 @@
+header{
+  height: 550px;
+  color: #FFF;
+}
+
+#headerVid{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; //Put the video behind the other objects
+  background-size: cover;
+}
+
+.header-wrap{
+  width: 80%;
+  margin: auto;
+}
+
+.logo-container{
+  width: 100px;
+  height: 50px;
+  float: left;
+  text-align: center;
+}
+
+.logo{
+    font-family: $font-logo;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.main-menu{
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.menu-item{
+  text-decoration-style: none;
+}
+
+.afterHeader{
+  width: 100%;
+  height: 500px;
+  margin-top: 400px;
+  z-index: 10;
+  background-color: #FFF;
+}

@@ -1,6 +1,7 @@
+//CSS TOOLS AS WELL AS ALL THE SASS VARIABLES
 @import '1-Tools/variables';
 @import '1-Tools/normalize';
-body{
-  margin: 0;
-  padding: 0;
-}
+
+//IMPORTS FOR ALL SEPARATE SECTIONS OF THE WEBSTIE
+@import '2-Sections/global';
+@import '2-Sections/header';
