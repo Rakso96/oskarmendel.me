@@ -1,0 +1,25 @@
+{
+  "name": "oskarmendel.me",
+  "version": "1.0.0",
+  "description": "A personal portfolio website for the developer Oskar Mendel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rakso96/oskarmendel.me.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Oskar Mendel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rakso96/oskarmendel.me/issues"
+  },
+  "homepage": "https://github.com/Rakso96/oskarmendel.me#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
