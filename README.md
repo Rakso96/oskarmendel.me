@@ -6,4 +6,9 @@ This readme will be updated as we go..
 #TODO
 * Finish the design (Mainly contact and portfolio section)
 * Take a picture of me for the About section
-* Decide about fonts to use
+* Learn more about Grunt
+* Learn more about html videos
+* SEO
+
+#Fonts used:
+Playfair Display, Abril Fatface
