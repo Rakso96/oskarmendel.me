@@ -15,10 +15,24 @@ h1{
   margin: 0;
 }
 
+//space css
+.space-bot{
+ padding-bottom: 50px;
+}
+
+.headline-font{
+  font-family: $font-headline;
+}
+
 .headline{
   font-family: $font-headline;
 }
 
 .text-bigYellow{
 	color: $color-theme;
+}
+
+.dotted-hr{
+   width: 80%;
+   border-top: 1px dotted #000;
 }
