@@ -1,3 +1,8 @@
+//-------------------------------------
+//----------WORKFLOW-------------------
+//This is the section class for our workflow section.
+//here we decide the background color, which fonts to use and the size.
+//-------------------------------------
 .workflow{
  width: 100%;
  height: 250px;
@@ -5,6 +10,13 @@
  font-family: $font-headline;
 }
 
+//-------------------------------------
+//----------WORKFLOW-CONTAINER---------
+//This is the container for our workflow section.
+//this class decides the width to be 80% and be centered.
+//We also make this into a flexbox with the content to be displayed in a row
+//together with our justify content with space around it.
+//-------------------------------------
 .workflow-container{
  width: 80%;
  padding-top: 50px;
@@ -14,11 +26,23 @@
  justify-content: space-around;
 }
 
+//-------------------------------------
+//----------WORKFLOW-ITEM--------------
+//This is the items that will be inside the workflow contianer.
+//this is also what contiains our images in the workflow section.
+//The images are from Font-Awesome.
+//-------------------------------------
 .workflow-item{
   text-align: center;
   font-weight: bold;
 }
 
+//-------------------------------------
+//----------WORKFLOW-ITEM-I------------
+//Here we make the italic tag inside our workflow item divs to have a 
+//round border around them. This is because our font awesome images are 
+//inside the italic tags.
+//-------------------------------------
 .workflow-item i{
   border-radius: 50%;
   border: 5px solid #000;

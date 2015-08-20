@@ -1,3 +1,10 @@
+//-----------ABOUT-SECTION-----------
+//-----------------------------------
+//The section class that sets the size of the about section and
+//creates a rectangle theme using gradients in the background
+//z-index is to make the about page appear above the video playing
+// incase the video would appear larger on some screens
+//-----------------------------------
 .about{
   position: relative;
   width: 100%;
@@ -12,6 +19,11 @@
     background-size: 64px 128px;
 }
 
+//-------------FLEXBOX-------------
+//---------------------------------
+//The flexbox class we can use all over the site. Will display
+//the objects inside as flexbox in a row with space around
+//---------------------------------
 .flex{
 	display: flex;
 	flex-direction: row;
@@ -19,21 +31,42 @@
 	justify-content: space-around;
 }
 
-.col{
+//-----------ABOUT-COLLUMN---------
+//---------------------------------
+//The two collumns in the about page
+//setting a sticky width and height for it.
+//---------------------------------
+.about-col{
 	//background-color: #CCC;
 	width: 400px;
 	height: 400px;
 }
 
+//-----------ABOUT-TEXT------------
+//---------------------------------
+//A class used in the about section to 
+// set the text into the standard text for the page.
+//---------------------------------
 .about-text{
 	text-align: center;
 	font-family: $font-stack;
 }
 
+//-----------ABOUT-UNDERTITLE------
+//---------------------------------
+//setting the font size into a size more acceptable
+//for the text under a headline.
+//---------------------------------
 .about-undertitle{
  font-size: 20px;
 }
 
+//-----------ABOUT-WRAP------------
+//---------------------------------
+//Wrapper for the about section and 
+//adds a padding on the top to not make the content
+//feel its too clumped up.
+//---------------------------------
 .about-wrap{
   padding-top: 50px;
   width: 80%;
@@ -49,6 +82,12 @@
   background-repeat: no-repeat;
 }
 
+//-----------ABOUT-BUTTON----------
+//---------------------------------
+//The button in the about page
+//we give it a nice background color and a nice outline
+//as well as making it float right for a better UX design.
+//---------------------------------
 .about-button{
  float: right;
  padding: 5px 15px;

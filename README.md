@@ -11,4 +11,4 @@ This readme will be updated as we go..
 * SEO
 
 #Fonts used:
-Playfair Display, Abril Fatface
+Playfair Display, Oswald

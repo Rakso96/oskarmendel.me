@@ -1,4 +1,6 @@
-//Link stylings
+//-------------------------------------
+//----------Link stylings--------------
+//-------------------------------------
 a{
   text-decoration: none;
 }
@@ -11,15 +13,28 @@ a:link{
   color: #FFF;
 }
 
+//--------------end--------------------
+//----------Link stylings--------------
+//-------------------------------------
+
+//-------------------------------------
+//----------NORMALIZE-H1-MARGIN--------
+//-------------------------------------
 h1{
   margin: 0;
 }
 
-//space css
+//-------------------------------------
+//----------SPACE-STYLINGS-------------
+//Styles used to space around divs
+//-------------------------------------
 .space-bot{
  padding-bottom: 50px;
 }
 
+//-------------------------------------
+//----CLASSES-FOR-HEADLINE-FONTS-------
+//-------------------------------------
 .headline-font{
   font-family: $font-headline;
 }
@@ -32,6 +47,9 @@ h1{
 	color: $color-theme;
 }
 
+//-------------------------------------
+//----------DOTTED-HR-TAG--------------
+//Dotted hr tag used for separation on the site.
 .dotted-hr{
    width: 80%;
    border-top: 1px dotted #000;
