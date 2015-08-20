@@ -5,7 +5,7 @@
 //-------------------------------------
 .workflow{
  width: 100%;
- height: 250px;
+ height: 650px;
  background-color: rgb(224, 212, 0);
  font-family: $font-headline;
 }
@@ -27,12 +27,25 @@
 }
 
 //-------------------------------------
+//----------WORKFLOW-COLUMN------------
+//This is the class for our collumns in our flex grid
+//this class actually doesnt do anything when it comes to css it just
+//separates the workflow items into two rows by adding 2 of them into theese
+// collumns.
+//-------------------------------------
+.workflow-col{
+	//flex-direction: column;
+	max-width: 50%;
+}
+
+//-------------------------------------
 //----------WORKFLOW-ITEM--------------
 //This is the items that will be inside the workflow contianer.
 //this is also what contiains our images in the workflow section.
 //The images are from Font-Awesome.
 //-------------------------------------
 .workflow-item{
+  width: 300px;
   text-align: center;
   font-weight: bold;
 }
@@ -47,4 +60,11 @@
   border-radius: 50%;
   border: 5px solid #000;
   padding: 20px;
+}
+
+@media screen and (max-width: 700px){
+	.workflow-item i{
+	  border: 3px solid #000;
+	  font-size: 3em;
+	}
 }
