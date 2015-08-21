@@ -128,12 +128,25 @@
 //screens max width is 975px
 //-------------------------------------
 @media screen and (max-width: 975px){
+  .about-wrap{
+    padding-top: 25px;
+  }
+
   .about-col{
     width: 300px;
   }
 
   .about-space-bot{
-    padding: 0px;
+    padding: 50px;
+  }
+
+  .about-title{
+    font-size: 24px;
+  }
+
+  .about-undertitle{
+    font-size: 18px;
+    padding-bottom: 25px;
   }
 }
 
