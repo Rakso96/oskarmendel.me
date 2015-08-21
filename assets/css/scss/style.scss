@@ -1,9 +1,11 @@
 //CSS TOOLS AS WELL AS ALL THE SASS VARIABLES
 @import '1-Tools/variables';
 @import '1-Tools/normalize';
+@import '1-Tools/foundation.min';
 
 //IMPORTS FOR ALL SEPARATE SECTIONS OF THE WEBSTIE
 @import '2-Sections/global';
 @import '2-Sections/header';
 @import '2-Sections/about';
 @import '2-Sections/workflow';
+@import '2-Sections/portfolio';

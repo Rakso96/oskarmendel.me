@@ -5,8 +5,8 @@
 //-------------------------------------
 .workflow{
  width: 100%;
- height: 650px;
- background-color: rgb(224, 212, 0);
+ height: 680px;
+ background-color: rgb(255, 255, 0);
  font-family: $font-headline;
 }
 
@@ -47,15 +47,15 @@
 //-------------------------------------
 .workflow-item{
   width: 300px;
-  height: 250px;
+  height: 280px;
   text-align: center;
   font-weight: bold;
 }
 
 //-------------------------------------
 //----------WORKFLOW-ITEM-I------------
-//Here we make the italic tag inside our workflow item divs to have a 
-//round border around them. This is because our font awesome images are 
+//Here we make the italic tag inside our workflow item divs to have a
+//round border around them. This is because our font awesome images are
 //inside the italic tags.
 //-------------------------------------
 .workflow-item i{
@@ -68,9 +68,13 @@
 	font-family: $font-stack;
 }
 
+.workflow h1{
+  font-family: $font-headline;
+}
+
 @media screen and (max-width: 750px){
 	.workflow{
-	  height: 1250px;
+	  height: 1350px;
 	}
 
 	.workflow-container{
@@ -80,8 +84,8 @@
 	.workflow-col{
 	  display: flex;
 	  flex-direction: column;
-	  padding-bottom: 50px;
 	  max-width: none;
+    padding-bottom: 80px;
 	}
 
 	.workflow-item{

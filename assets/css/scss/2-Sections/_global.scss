@@ -20,8 +20,10 @@ a:link{
 //-------------------------------------
 //----------NORMALIZE-H1-MARGIN--------
 //-------------------------------------
-h1{
+h1, h2, h3, h4, h5, h6{
   margin: 0;
+  //color: #FFF;
+  font-family: $font-stack;
 }
 
 //-------------------------------------
@@ -64,5 +66,6 @@ h1{
 //Dotted hr tag used for separation on the site.
 .dashed-hr{
    width: 80%;
+   margin: auto;
    border-top: 1px dashed #000;
 }

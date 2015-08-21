@@ -6,6 +6,7 @@
 // incase the video would appear larger on some screens
 //-----------------------------------
 .about{
+  color: #000;
   position: relative;
   width: 100%;
   height: 450px;
@@ -44,12 +45,22 @@
 
 //-----------ABOUT-TEXT------------
 //---------------------------------
-//A class used in the about section to 
+//A class used in the about section to
 // set the text into the standard text for the page.
 //---------------------------------
 .about-text{
 	text-align: center;
 	font-family: $font-stack;
+  color: #000;
+}
+
+//-----------ABOUT-UNDERTITLE------
+//---------------------------------
+//setting the font size into a size more acceptable
+//for the headline text
+//---------------------------------
+.about-title{
+  color: #000;
 }
 
 //-----------ABOUT-UNDERTITLE------
@@ -58,12 +69,14 @@
 //for the text under a headline.
 //---------------------------------
 .about-undertitle{
- font-size: 20px;
+  color: #000;
+ //font-size: 20px;
+ padding-bottom: 25px;
 }
 
 //-----------ABOUT-WRAP------------
 //---------------------------------
-//Wrapper for the about section and 
+//Wrapper for the about section and
 //adds a padding on the top to not make the content
 //feel its too clumped up.
 //---------------------------------
@@ -91,10 +104,11 @@
 .about-button{
  float: right;
  padding: 5px 15px;
- background: #B3AA12;
+ background: #e8cd4d;
  font-weight: 700;
  color: #000;
- border: 1px solid $color-theme;
+ border: 2px solid $color-theme;
+ border-radius: 5px;
 }
 
 //----------ABOUT-FACEIMAGE-MOBILE--
@@ -121,41 +135,16 @@
  padding-bottom: 50px;
 }
 
-
-//-------------------------------------
-//----------MEDIA-TAG-975-------------
-//This is a media tag that decides what happends when the
-//screens max width is 975px
-//-------------------------------------
-@media screen and (max-width: 975px){
-  .about-wrap{
-    padding-top: 25px;
-  }
-
-  .about-col{
-    width: 300px;
-  }
-
-  .about-space-bot{
-    padding: 50px;
-  }
-
-  .about-title{
-    font-size: 24px;
-  }
-
-  .about-undertitle{
-    font-size: 18px;
-    padding-bottom: 25px;
-  }
+.about-col p{
+  padding-top: 20px;
 }
 
 //-------------------------------------
-//----------MEDIA-TAG-780-------------
+//----------MEDIA-TAG-800-------------
 //This is a media tag that decides what happends when the
-//screens max width is 780px
+//screens max width is 800px
 //-------------------------------------
-@media screen and (max-width: 780px){
+@media screen and (max-width: 800px){
   .about{
     height: 650px;
   }
@@ -179,12 +168,7 @@
     height: 150px;
   }
 
-  .about-title{
-    font-size: 20px;
-  }
-
   .about-undertitle{
-    font-size: 16px;
     padding-bottom: 20px;
   }
 
