@@ -1,20 +1,3 @@
-//The document ready function.
-$(function(){
-
-//Resize the portfolio list incase the window is small (Mobile adjustment)
-  if($(window).width() < 967){
-    addMarginList(100, ".previous-work");
-  }
-
-//When a website in the portfolio section is hovered
-  $('.websites').hover(
-    function(){
-      removeListItemClass(this);
-      $(this).addClass("selected-website");
-    }
-  );
-});
-
 /*  WINDOW REZIE EVENT HANDLER
 If the window is rezised do functions that depends on rezize so the site doesnt need manual refresh
   *In our case here we add margin to our portfolio list incase the screen was rezized.
@@ -31,6 +14,55 @@ $(window).resize(function () {
     else{
       resetInfoMargin();
     }
+});
+
+$(window).scroll(function(){
+  var wScroll = $(this).scrollTop();
+
+  if(wScroll > $(".workflow-container").offset().top - ($(window).height() / 1.2)){
+    console.log("Triggered");
+
+    $(".workflow-item").each(function (i){
+      setTimeout(function(){
+        $(".workflow-item").eq(i).addClass("workflow-effect");
+      }, 150 * (i+1));
+    });
+  }
+});
+
+//The document ready function.
+$(function(){
+
+//Resize the portfolio list incase the window is small (Mobile adjustment)
+  if($(window).width() < 967){
+    addMarginList(100, ".previous-work");
+  }
+
+//When a website in the portfolio section is hovered
+  $('.websites').hover(
+    function(){
+      removeListItemClass(this);
+      $(this).addClass("selected-website");
+    }
+  );
+
+
+/*
+IF A LINK WITH A # IS CLICKED FIND AN ID WITH THE #NAME
+AND ANIMATE A SCROLL TO IT.
+*/
+  $('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
 });
 
 /** REMOVE LIST ITEM CLASS
