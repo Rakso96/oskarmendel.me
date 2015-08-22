@@ -20,7 +20,6 @@ $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
 
   if(wScroll > $(".workflow-container").offset().top - ($(window).height() / 1.2)){
-    console.log("Triggered");
 
     $(".workflow-item").each(function (i){
       setTimeout(function(){
