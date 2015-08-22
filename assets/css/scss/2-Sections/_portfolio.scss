@@ -1,3 +1,8 @@
+//-------------------------------------
+//----------PORTFOLIO-------------------
+//This is the section class for our portfolio section.
+//here we decide the background image, which fonts to use and the size.
+//-------------------------------------
 .portfolio{
   width: 100%;
   height: 830px;
@@ -9,6 +14,11 @@
   overflow: hidden;
 }
 
+//-------------------------------------
+//----------PORTFOLIO CONTAINER-------------------
+//This is the contianer for the portfolio where we simply set the
+//width to 80 and margin auto to center the content.
+//-------------------------------------
 .portfolio-container{
   width: 80%;
   height: 100%;
@@ -16,10 +26,21 @@
   position: relative;
 }
 
+//-------------------------------------
+//---------PREVIOUS WORK-------------------
+//This is the unordered list for our previous projects
+//Here we simply just remove the round bulltes next to the list items.
+//-------------------------------------
 .previous-work{
   list-style: none;
 }
 
+//-------------------------------------
+//---------WEBSITES-------------------
+//This is the list items that will act as our previous work
+// since we want the objects to be something you interract with i set the cursor to a pointer
+// and we add a transition since we want it to move when hovered.
+//-------------------------------------
 .websites{
   width: 300px;
   height: 250px;
@@ -34,6 +55,15 @@
   transition: margin 0.3s ease-in-out;
 }
 
+//-------------------------------------
+//---------WEBSITE INFO-------------------
+//This is the big info box on the other side of all the websites
+// we set the position absolute since we want to type the content in the html
+// and still be outside of our small list item.
+// We also give it a margin left since we want the slide effect.
+//This object will be invisible when not active so we set the opacity to 0 and pointer-events to none
+//so its not interactable
+//-------------------------------------
 .website-info{
   position: absolute;
   height: 500px;
@@ -53,6 +83,12 @@
   transition: all 0.1s ease-in-out;
 }
 
+//-------------------------------------
+//---------WEBSITE INFO ACTIVATED-------------------
+//This is the currently displaying website info box.
+// we give it back the pointer events and use a transform to make the
+//transition not appear choppy on chrome for example.
+//-------------------------------------
 .selected-website .website-info{
   opacity: 0.8;
   //margin-left: 0px; //Margin can make the transition choppy on chrome, better to use transform..
@@ -67,11 +103,20 @@
   transition: all 0.4s ease-in-out;
 }
 
+//-------------------------------------
+//---------WEBSITES ACTIVATED-------------------
+//This is the currently viewed website.
+//We add a margin left to 50px so it seems like its selected or the item is standing out.
+//-------------------------------------
 .selected-website{
   transition: all 0.3s ease-in-out;
   margin-left: 50px;
 }
 
+//-------------------------------------
+//---------WEBSITE INFO HEADLINE-------------------
+//This is the info box headline which we give a new font and align it to center.
+//-------------------------------------
 .website-info-headline{
   padding-bottom: 30px;
   text-align: center;
@@ -79,6 +124,11 @@
   font-family: $font-headline;
 }
 
+//-------------------------------------
+//---------WEBSITE INFO BUTTON-------------------
+//This is the call to arms button we place in every info box
+// we just have standard settings for a link to appear like a button here.
+//-------------------------------------
 .website-info-button{
   //position: absolute;
   //bottom: 30px;
@@ -95,6 +145,11 @@
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7);
 }
 
+
+//-------------------------------------
+//---------CLASSES FOR WEBSITE BACKGROUND IMAGES-------------------
+//This is classes used for background images for the websites.
+//-------------------------------------
 .site-oldPortfolio{
   background-image:url("../img/portfolio-old.png");
 }
