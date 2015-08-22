@@ -161,3 +161,68 @@
 .site-insideMetal{
   background-image:url("../img/inside-metal.png");
 }
+
+@media screen and (max-width: 1280px){
+  .website-info{
+    left: 550px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .website-info{
+    left: 450px;
+  }
+}
+
+@media screen and (max-width: 1080px){
+  .portfolio-container{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 981px){
+  .website-info{
+    top: 100px;
+    left: 600px;
+  }
+}
+
+@media screen and (max-width: 980px){
+  .portfolio{
+    height: 500px;
+  }
+
+  .websites{
+    display: inline-block;
+    position: absolute;
+    top: 350px;
+    bottom: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  .selected-website{
+    top: 300px;
+    margin-left: 0px;
+  }
+
+  .website-info{
+    width: 250px;
+    height: 280px;
+    overflow: hidden;
+    left: 0;
+    top: -300px;
+  }
+
+  .website-info h1{
+    font-size: 3vh;
+  }
+
+  .intro-text{
+    padding-bottom: 100px;
+  }
+  .time-span{
+    display: none;
+  }
+}
