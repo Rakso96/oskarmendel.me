@@ -1,19 +1,8 @@
-#oskarmendel.me
-This is my project of building a better and more interesting portfolio for myself.
+#[oskarmendel.me](http://oskarmendel.me/)
+Oskar Mendel is a freelance web developer & web designer. He loves to make websites and would be happy to work with you.
 
-This readme will be updated as we go..
-
-#TODO
-* Make the portfolio section responsive.
-* Add scroll based effects (Landing Elements)
-* Add Contact section.
-* Finalize / Upgrade Services section
-* Add headers for sections and ScrollTo links.
-* Take a picture of me for the About section
-* More projects and a scroll function in JS for the portfolio section.
-* Learn more about Grunt
-* Browser compatibility
-* SEO
+#Info
+This website is custom built after my own design, if you want to reuse the code to make your own you are free to do so.
 
 #Fonts used:
 Playfair Display, Oswald
