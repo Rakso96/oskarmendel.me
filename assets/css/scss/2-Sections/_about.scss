@@ -111,6 +111,10 @@
  border-radius: 5px;
 }
 
+.about-button a{
+  color: #000;
+}
+
 //----------ABOUT-FACEIMAGE-MOBILE--
 //----------------------------------
 //The image that will replace the big image when the screen is adjusted
@@ -167,6 +171,7 @@
   .about-faceimg-mobile{
     visibility: visible;
     height: 150px;
+    margin-bottom: 20px;
   }
 
   .about-undertitle{
@@ -175,5 +180,9 @@
 
   .about-button{
     margin-top: 20px;
+  }
+
+  .about-space-bot{
+    padding-bottom: 25px;
   }
 }

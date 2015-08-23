@@ -4,9 +4,11 @@
 header{
   height: 650px;
   color: #FFF;
-  background-size: cover;
+  background-size: 0%;
   background-position: top center;
   background-repeat: no-repeat;
+  position: relative;
+  background-image: url("../img/desktopComp.jpg");
 }
 
 header h1, h2, h3, h4, h5, h6{
@@ -96,7 +98,7 @@ header h1, h2, h3, h4, h5, h6{
   font-family: $font-stack;
   font-size: 28px;
   list-style-type: none;
-  display: inline-flex;
+  display: block;
   float: right;
 }
 
@@ -224,12 +226,12 @@ header h1, h2, h3, h4, h5, h6{
 //screens max width is 695px
 //-------------------------------------
 @media screen and (max-width: 695px){
-  .overlay-tint{
-    opacity: 0.4;
+  header{
+    background-size: cover;
   }
 
-  .header-wrap{
-    width: 100%;
+  .overlay-tint{
+    opacity: 0.4;
   }
 
   #headerVid{
@@ -247,7 +249,7 @@ header h1, h2, h3, h4, h5, h6{
   .main-menu{
     margin: auto;
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     float: right;
     padding: 50px 0 50px 0;
   }
@@ -285,5 +287,9 @@ header h1, h2, h3, h4, h5, h6{
   .main-menu{
     padding: 50px 0 0 0;
     float: none;
+  }
+
+  .header-wrap{
+    width: 90%;
   }
 }
