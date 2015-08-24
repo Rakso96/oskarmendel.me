@@ -1,6 +1,7 @@
 var express = require('express'); //Getting the framework express
 
 var path = require('path'); //Helps us with putting together paths
+var hbs = require('hbs');
 var blogEngine = require('./lib/blogengine/blogengine');
 
 /*
@@ -11,10 +12,12 @@ var blogRoute = require('./routes/blog'); //Alla routes som har med blog funktio
 
 var app = express();
 
+app.use(express.static('public')); //setting the public directory as standard for views to look for img etc etc
 
 //View engine setup
 app.set('views', path.join(__dirname, 'views')); // Set the view directory to /views
-app.set('view engine', 'jade'); //Use jade as templating engine
+app.set('view engine', 'html'); //Use jade as templating engine
+app.engine('html', hbs.__express);
 
 app.use('/', routes); //use the routes var if weget a request on the '/' (the root directory of the site)
 app.use('/blog', blogRoute.list);
