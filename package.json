@@ -10,7 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/Rakso96/oskarmendel.me.git"
   },
-  "bugs" : "https://github.com/Rakso96/oskarmendel.me/issues",
+  "bugs": {
+    "url": "https://github.com/Rakso96/oskarmendel.me/issues"
+  },
   "keywords": [
     "Portfolio",
     "Oskar Mendel",
@@ -18,13 +20,11 @@
   ],
   "author": "Oskar Mendel",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Rakso96/oskarmendel.me/issues"
-  },
   "homepage": "http://oskarmendel.me/",
   "devDependencies": {
     "express": "^4.13.3",
     "gulp": "^3.9.0",
+    "gulp-uglify": "^1.2.0",
     "jade": "^1.11.0"
   }
 }
