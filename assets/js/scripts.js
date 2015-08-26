@@ -62,6 +62,26 @@ AND ANIMATE A SCROLL TO IT.
 	        window.location.hash = target;
 	    });
 	});
+
+//The tabbed list under the the about section
+  $('.about-tablist li').on('click', function(e){
+    e.preventDefault();
+
+    //var $target = $(this.hash);
+    var hrefVal = $(this).children().attr('href'); //Get the link from the anchor tag inside the listitem
+
+
+    $(this).addClass('about-active').siblings().removeClass('about-active'); //change class on the list item
+    $('#' + hrefVal).addClass('active').siblings().removeClass('active'); //change class on the tabContent
+  });
+
+  //setting the % of all the skills
+  $('#skillHtml').css('width', '100%').css('border-radius', '20px');
+  $('#skillJs').css('width', '65%');
+  $('#skillWp').css('width', '80%');
+  $('#skillPhp').css('width', '40%');
+  $('#skillPython').css('width', '15%');
+  $('#skillPhotoshop').css('width', '80%');
 });
 
 /** REMOVE LIST ITEM CLASS
