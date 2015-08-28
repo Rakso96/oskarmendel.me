@@ -12,3 +12,6 @@ Playfair Display, Oswald
 * Remove video from header and replace with a better designed header.
 * Make mobile version of the mobile section responsive (Add height on section)
 * Get a new idea for the Portfolio section which fits better on mobile.
+* Learn some react
+* Style the articles page
+* Add articles section on site.

@@ -19,7 +19,7 @@ $(window).resize(function () {
 $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
 
-  if(wScroll > $(".workflow-container").offset().top - ($(window).height() / 1.2)){
+  if(wScroll > $(".workflow-container").offset().top - ($(window).height() / 1.1)){
 
     $(".workflow-item").each(function (i){
       setTimeout(function(){

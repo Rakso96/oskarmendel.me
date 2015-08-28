@@ -1,3 +1,13 @@
+<?php
+  include('includes/core/Database.php');
+
+ini_set('display_errors', 'On');
+
+  session_start();
+  Database db = new Database();
+?>
+
+
 <!DOCTYPE html>
 <html>
   <head>
