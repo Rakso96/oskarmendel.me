@@ -4,7 +4,8 @@
 ini_set('display_errors', 'On');
 
   session_start();
-  Database db = new Database();
+  $db = new Database();
+    $db->select("pages");
 ?>
 
 
@@ -257,7 +258,7 @@ ini_set('display_errors', 'On');
               </form>
             </div>
         </div>
-      </secion>
+      </section>
 
       <!-- SCRITPS -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
