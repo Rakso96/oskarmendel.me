@@ -5,7 +5,11 @@ ini_set('display_errors', 'On');
 
   session_start();
   $db = new Database();
-    $db->select("pages");
+    //$db->delete("pages", 4);
+    //$db->update("pages", 3, "Updated Post", "The first post i updated", "This is my first updated post through php", "updated-post");
+    //$db->insert("pages", "PHP Post", "My first post from PHP", "This is the first post which was sent through php", "php-post");
+    $postArray = $db->selectAll("pages");
+    var_dump($postArray);
 ?>
 
 
@@ -46,9 +50,6 @@ ini_set('display_errors', 'On');
   <!-- HEADER CONTENT -->
     <header>
       <div class="overlay-tint">
-        <video autoplay loop id="headerVid" muted>
-          <source src="assets/vid/gasstation.mp4" type="video/mp4">
-            Your browser does not support the video tag.</video>
           <div class="header-wrap">
             <div class="logo-container">
               <div class="logo">
@@ -224,6 +225,44 @@ ini_set('display_errors', 'On');
       </div>
     </section>
       <!-- PORTFOLIO CONTENT END -->
+
+    <section class="articles">
+      <div class="articles-container">
+          <div class="large-6 columns">
+            <?php
+                if(isset($postArray)){
+                    $postCount = count($postArray);
+                    for($x = 0; $x < $postCount; $x++){
+                        if(isset($postArray[$x])){
+                            $post = $postArray[$x];
+                        }
+                        ?>
+                        <div class="article-post">
+                            <div class="postDate"> <?php echo $post[5] ?></div>
+                            <div class="row">
+                                <div class="postTitle">
+                                    <h1><?php echo $post[1] ?></h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="postBody">
+                                    <p><?php echo $post[2] ?></p>
+                                </div>
+                                <div class="postLink"><a href="<?php echo $post[4] ?>">Read more!</a></div>
+                            </div>
+                        </div>
+                        <?php
+                    }
+                }
+            ?>
+          </div>
+          <div class="large-6 columns">
+            <h1 class="ArticlesHeadline">Articles</h1>
+          </div>
+      </div>
+    </section>
+
+  <!-- CONTACT CONTENT -->
       <section class="contact">
         <div class="contact-container">
           <h1 id="Contact">Contact</h1>
@@ -259,6 +298,10 @@ ini_set('display_errors', 'On');
             </div>
         </div>
       </section>
+
+  <footer>
+      This will be the footer
+  </footer>
 
       <!-- SCRITPS -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
